@@ -5,14 +5,16 @@ import HomeScreen from './src/screens/HomeScreen'
 import SignInScreen from './src/screens/SignInScreen'
 import CreateScreen from './src/screens/CreateScreen'
 import EditScreen from './src/screens/EditScreen'
-import { Provider } from './src/TodoContext'
+import ShowScreen from './src/screens/ShowScreen'
+import { Provider } from './src/context/TodoContext'
 
 const navigator = createStackNavigator(
   {
     SignIn: SignInScreen,
     Home: HomeScreen, 
     Create: CreateScreen,
-    Edit: EditScreen
+    Edit: EditScreen, 
+    Show: ShowScreen
   },
   {
     initialRouteName: 'SignIn',
